@@ -6,13 +6,13 @@
 #    By: psuanpro <psuanpro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/14 15:23:55 by psuanpro          #+#    #+#              #
-#    Updated: 2023/06/14 15:43:31 by psuanpro         ###   ########.fr        #
+#    Updated: 2023/06/28 02:09:37 by psuanpro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME=StartwithAFewFunctions
 CC=g++
-CFLAGS= -Wall -Wextra -Werror -std=c++98
+CPPFLAGS= -Wall -Wextra -Werror -std=c++98
 
 SRCS= main.cpp
 
@@ -28,12 +28,12 @@ CLEAN = echo "$(BYEL)$(NAME) clean....$(RES)"
 FCLEAN = echo "$(BRED)$(NAME) fclean....$(RES)"
 
 .cpp.o:
-	@$(CC) -g $(CFLAGS) -c $< -o $@
+	@$(CC) -g $(CPPFLAGS) -c $< -o $@
 
 all:$(NAME)
 
 $(NAME):$(OBJS)
-	@$(CC) -g $(CFLAGS) $(OBJS) -o $@
+	@$(CC) -g $(CPPFLAGS) $(OBJS) -o $@
 	@$(COMPILE)
 
 clean:
