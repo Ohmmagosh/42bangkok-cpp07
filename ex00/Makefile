@@ -6,13 +6,13 @@
 #    By: psuanpro <psuanpro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/14 00:50:42 by psuanpro          #+#    #+#              #
-#    Updated: 2023/06/14 13:12:26 by psuanpro         ###   ########.fr        #
+#    Updated: 2023/06/14 15:43:25 by psuanpro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME=StartwithAFewFunctions
 CC=g++
-CFLAGS= -Wall -Wextra -Werror
+CFLAGS= -Wall -Wextra -Werror -std=c++98
 
 SRCS= main.cpp
 

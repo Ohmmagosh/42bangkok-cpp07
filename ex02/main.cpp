@@ -6,7 +6,7 @@
 /*   By: psuanpro <psuanpro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 13:52:30 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/06/14 23:23:05 by psuanpro         ###   ########.fr       */
+/*   Updated: 2023/06/16 17:51:12 by psuanpro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,5 @@ int	main(void) {
 	} catch (const std::exception &e) {
 		std::cout << e.what() << std::endl;
 	}
-
-
 	return (0);
 }
