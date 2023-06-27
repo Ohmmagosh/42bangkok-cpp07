@@ -6,7 +6,7 @@
 /*   By: psuanpro <psuanpro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 16:30:58 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/06/14 23:11:33 by psuanpro         ###   ########.fr       */
+/*   Updated: 2023/06/28 03:51:01 by psuanpro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ class Array {
 			return (*this);
 		};
 		T&	operator[](const unsigned int index) {
-			if (index < 0 || _size < 0)
+			if (index < 0 || _size < 0 || index >= _size)
 				throw std::overflow_error("index is out of bounds");
 			else
 				return _data[index];
@@ -54,7 +54,7 @@ class Array {
 		};
 		~Array(){
 			delete [] _data;
-			std::cout << "Array destroy!!" << std::endl;
+			// std::cout << "Array destroy!!" << std::endl;
 		};
 
 	private:

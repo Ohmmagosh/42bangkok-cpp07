@@ -6,7 +6,7 @@
 /*   By: psuanpro <psuanpro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 13:52:30 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/06/16 17:51:12 by psuanpro         ###   ########.fr       */
+/*   Updated: 2023/06/28 03:50:27 by psuanpro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	main(void) {
 			std::cout << "e["<<i<<"] = "<< e[i] << std::endl;
 		}
 
-		Array<std::string> f(3);
+		Array<std::string> f(1);
 		f[0] = "hello";
 		f[1] = "world";
 		f[2] = "42";
